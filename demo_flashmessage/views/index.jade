@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	
+	p Visite 
+		a(href='/flash') flash to see flash messages
+	
+	if (message.length > 0)
+		p Flash message: #{message}
