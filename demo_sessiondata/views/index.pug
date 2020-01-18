@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	h1= title
+	
+	div.container
+		div.panel.panel-default
+			div.panel-heading.text-center #{page_title}
+			
+			div.panel-body
+				table(style='width:100%',id='testcases')
+					tr
+						th Test Case Description
+						th Result
+					tr
+						td Case 1: req.sessionData('var01') must display three values
+						td #{var01_1}
+					
+					tr
+						td Case 2: req.sessionData('var01') again must be empty
+						td #{var01_2}	
+						
+					tr
+						td Case 3: req.sessionData('back') must display last value
+						td #{back_1}
+					tr
+						td Case 4: req.sessionData('back') again display last value
+						td #{back_2}
+					tr
+						td Case 5: req.sessionData('') must display all remaining data stored
+						td #{varxx}

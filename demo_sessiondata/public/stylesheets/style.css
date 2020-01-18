@@ -3,9 +3,30 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-th{
-	text-align: left;
-}
 a {
   color: #00B7FF;
+}
+
+#testcases {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#testcases td, #testcases th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#testcases tr:nth-child(even){background-color: #f2f2f2;}
+
+#testcases tr:hover {background-color: #ddd;}
+
+#testcases th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #a40000;
+  color: white;
 }

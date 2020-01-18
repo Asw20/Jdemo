@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 
@@ -18,7 +19,7 @@ router.get('/', function(req, res, next) {
 	req.sessionData('var03','value21');
 	req.sessionData('var04','value22');
 	
-	res.render('index', { title: 'Express',page_title:page_title ,var01:req.sessionData('var01'), var012:req.sessionData('var01'), back:req.sessionData('back'), back2:req.sessionData('back'), varxx:req.sessionData() });
+	res.render('index', { title: 'Demo session-data',page_title:page_title ,var01_1:req.sessionData('var01'), var01_2:req.sessionData('var01'), back_1:req.sessionData('back'), back_2:req.sessionData('back'), varxx:req.sessionData() });
 });
 
 module.exports = router;
