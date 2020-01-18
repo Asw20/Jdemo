@@ -4,12 +4,10 @@
 
 
 
-## Usage
+## Exemple using session-data
+Created using Express 4 and plug.
 
-
-
-## Developing
-
+The demo show how to store data, how to retreive it and demonstrate the data can be retrieved only one's
 
 
 ### Tools
